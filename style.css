@@ -1,48 +1,37 @@
+.container {
+    color: #fff;
+}
+
+html, body {margin:0; padding:0;}
+
 body {
-	width: 100wh;
-	height: 90vh;
+	width: 100vw;
+	height: 100vh;
 	color: #fff;
-	background: linear-gradient(-45deg, #6e7f80, #536872, #708090, #536878); 
-	background-size: 400% 400%;
+	background-image: url('https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), linear-gradient(-45deg, #6e7f80, #536872, #708090, #536878);
+	background-size: cover, 400% 400%;
+	background-position: center;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 h1,
@@ -59,15 +48,17 @@ h6 {
 .shake {
 	animation: shake-animation 4.72s ease infinite;
 	transform-origin: 50% 50%;
-  }
-  .element {
+}
+
+.element {
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
 	background: red;
-  }
-  @keyframes shake-animation {
-	 0% { transform:translate(0,0) }
+}
+
+@keyframes shake-animation {
+	0% { transform:translate(0,0) }
 	1.78571% { transform:translate(5px,0) }
 	3.57143% { transform:translate(0,0) }
 	5.35714% { transform:translate(5px,0) }
@@ -75,22 +66,34 @@ h6 {
 	8.92857% { transform:translate(5px,0) }
 	10.71429% { transform:translate(0,0) }
 	100% { transform:translate(0,0) }
-  }
+}
 
-  .backdrop {
-	  -moz-box-shadow: 0px 6px 5px #111; 
-	  -webkit-box-shadow: 0px 6px 5px #111; 
-	  box-shadow: 0px 2px 10px #111; 
-	  -moz-border-radius:190px; 
-	  -webkit-border-radius:190px; 
-	  border-radius:190px;
-  }
+.backdrop {
+	-moz-box-shadow: 0px 6px 5px #111;
+	-webkit-box-shadow: 0px 6px 5px #111;
+	box-shadow: 0px 2px 10px #111;
+	-moz-border-radius:190px;
+	-webkit-border-radius:190px;
+	border-radius:190px;
+}
 
-  .linktree {
-	  width: 120px;
-	  height: 120px;
-	  background-image: url("profile.png");
-	  background-size: cover;
-	  background-repeat: no-repeat;
-	  background-position: 50% 50%;
-  }
+.linktree {
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background-image: url("RicardoFotoPerfil.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.btn-outline-light {
+	background: rgba(0,0,0,0.8);
+	color: #fff !important;
+	border-color: #fff !important;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: #000 !important;
+}
